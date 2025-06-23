@@ -15,5 +15,10 @@ The core of this project involves using a deep neural network to learn a mapping
 - 🖼️ **Image Reconstruction**: Generate strain images from predicted output.
 - 🛑 **Early Stopping**: Automatically stop training when the model converges.
 
-This system was developed and tested on **in vivo ultrasound datasets**, with a focus on real-world medical imaging use cases. It can serve as a foundation for further exploration in elastography, medical diagnostics, or scientific imaging workflows.
+This system was developed and tested on **in vivo ultrasound datasets** sourced from the **IMPACT Laboratory** at Concordia University. The data (2200 RF data pairs acquired with a CIRS phantom and Alpinion E-Cube R12 machine) originates from their “Ultrasound Elastography Dataset for Unsupervised Training” :contentReference[oaicite:1]{index=1}.
 
+---
+
+## 📚 Dataset Citation
+
+To acknowledge the source of the dataset, please cite the following publication when using this work:
