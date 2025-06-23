@@ -19,6 +19,13 @@ This system was developed and tested on **in vivo ultrasound datasets** sourced 
 
 ---
 
-## 📚 Dataset Citation
 
-To acknowledge the source of the dataset, please cite the following publication when using this work:
+
+## 📚 References
+
+### Dataset
+Our ultrasound data was sourced from the **IMPACT Laboratory at Concordia University**, specifically the *“Ultrasound Elastography Dataset for Unsupervised Training”* :contentReference[oaicite:1]{index=1}.
+
+### Model
+The core neural network architecture in this project is adapted from the **DICNet-corr unsupervised learning framework** :contentReference[oaicite:2]{index=2}, originally developed by `fead1`. DICNet‑corr is an unsupervised CNN-based method for 2D displacement measurement using digital image correlation.
+
