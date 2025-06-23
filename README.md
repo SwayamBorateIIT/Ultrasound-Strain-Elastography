@@ -54,29 +54,29 @@ We implement a combination of pixel- and patch-based unsupervised loss functions
 ### 1. Patch-ZNSSD Loss
 A patch-based normalized sum of squared differences, robust to illumination variations.
 
-\[
+$
 L_{\text{ZNSSD}} = \sum \left( \frac{(f - \mu_f)}{\sigma_f} - \frac{(g - \mu_g)}{\sigma_g} \right)^2
-\]
+$
 
 ### 2. Smoothness Loss
 Encourages spatial smoothness in the predicted displacement field.
 
-\[
+$
 L_{\text{smooth}} = \sum ||\nabla u||^2 + ||\nabla v||^2
-\]
+$
 
 ### 3. Census Loss
 A robust loss that compares pixel neighborhoods instead of absolute values.
 
-\[
+$
 L_{\text{census}} = \sum |C(f) - C(g)|
-\]
+$
 
 The total training loss is a weighted combination of these three losses:
 
-\[
+$
 L = \lambda_1 L_{\text{ZNSSD}} + \lambda_2 L_{\text{smooth}} + \lambda_3 L_{\text{census}}
-\]
+$
 
 ---
 
@@ -92,14 +92,14 @@ We compare our results to **GLUE (GLocal Ultrasound Elastography)**, a tradition
 ### Metrics:
 
 - **NRMSE (%):** Normalized Root Mean Squared Error
-\[
+$
 \text{NRMSE}(\%) = \left( \frac{100}{z} \sqrt{\frac{1}{N} \sum (x_i - x_i^*)^2} \right)
-\]
+$
 
 - **SNRe (dB):** Signal-to-Noise Ratio on estimated strain maps
-\[
+$
 \text{SNRe} = \frac{\mu_s}{\sigma_s}
-\]
+$
 
 ---
 
